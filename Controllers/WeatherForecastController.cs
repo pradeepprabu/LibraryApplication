@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Numerics;
 
 namespace LibraryApplication.Controllers
 {
@@ -25,7 +26,7 @@ namespace LibraryApplication.Controllers
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(1)),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[0]
+                Summary = "V3 Staging"
             } ];
             
         }
